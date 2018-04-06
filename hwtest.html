@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>MY WEBPAGE</title>
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Neucha|Permanent+Marker" rel="stylesheet">
+
+   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=uZgMY0qYgV6DevsPCyBc">
+   var latlng = new naver.map.LatLng(37.205175, 127.042063);
+       latlng.toString();
+   </script>
+  
+    <style>
+               
+        .navbar-brand{
+            font-family: 'Permanent Marker', cursive;
+            font-size: 20px;
+            font-weight : bold;
+            
+        }
+        .navbar{ 
+          background-color:rgb(203, 250, 250);
+          border-color : rgb(203, 250, 250);
+          width : 800px;
+          font-family: 'Neucha', cursive;
+          position : relative;
+          left : 250px;
+        
+              
+          
+         }
+
+
+        .navbar .navbar-nav>.active>a:hover,.navbar .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:focus { 
+          background-color:rgb(178, 235, 244);}
+          input {
+                    border: none;
+                    width: 75%;
+                    padding: 10px;
+                    float: left;
+                    font-size: 16px;
+                    
+                    }
+    form {
+        font-family: 'Neucha', cursive;        
+        text-align : center;  
+        position : absolute;
+        left : 400px;
+           
+       }
+      
+     
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-default ">
+        <div class="container-fluid" >
+             <div class="navbar-header">
+                 <a class="navbar-brand" href="#">
+                   <!-- Brand and toggle get grouped for better mobile display -->
+                   <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                     </button>
+                   </div>
+                                     
+               
+                   <!-- Collect the nav links, forms, and other content for toggling -->
+                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav">
+                   
+                            
+                 <img alt="HOME" src="http://i63.tinypic.com/v4yyom.png" width=30 length=30>
+ 
+                 </a>
+                       <a class="navbar-brand" href="#">HOME</a>
+                       <li class=><a href="https://blog.naver.com/sunic_han">My blog<span class="sr-only">(current)</span></a></li>
+                       <li class=><a href="http://cafe.naver.com/teamcadi">CADI</a></li>
+                       
+                           </ul>
+                         </div>
+                         </ul>
+                   </div><!-- /.navbar-collapse -->
+                  
+                 </div><!-- /.container-fluid -->
+                 
+               </nav> 
+
+               <div id="map" style="width:100%;height:400px;"></div>
+
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng(37.205175, 127.042063),
+    zoom: 10
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+</script>
+
+</body>
+
+</html>
+      
